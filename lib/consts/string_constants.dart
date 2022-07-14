@@ -6,6 +6,10 @@ class StringConstants {
   static const String visa = 'VISA';
   static const String expense = 'Expense';
   static const String income = 'Income';
+  static const String day = 'Day';
+  static const String week = 'Week';
+  static const String month = 'Month';
+  static const String analytics = 'Analytics';
 
   //Images
   static const String arrowUpIcon = 'assets/images/arrow_up.png';
