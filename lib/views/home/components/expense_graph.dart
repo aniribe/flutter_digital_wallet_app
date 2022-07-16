@@ -2,8 +2,16 @@ import 'package:digital_wallet_app/consts/app_colors.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 
+import '../../../data/data.dart';
+import '../../../util/logic_helper.dart';
+
 class ExpenseGraphDesign extends StatelessWidget {
-  const ExpenseGraphDesign({Key? key}) : super(key: key);
+  final String month;
+
+  const ExpenseGraphDesign({
+    Key? key,
+    required this.month,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +26,7 @@ class ExpenseGraphDesign extends StatelessWidget {
           backgroundColor: AppColors.black,
           lineBarsData: [
             LineChartBarData(
-              spots: [
-                const FlSpot(0, 4),
-                const FlSpot(1, 6),
-                const FlSpot(2, 8),
-                const FlSpot(3, 6.2),
-                const FlSpot(4, 6),
-                const FlSpot(5, 8),
-                const FlSpot(6, 9),
-                const FlSpot(7, 7),
-                const FlSpot(8, 6),
-                const FlSpot(9, 7.8),
-                const FlSpot(10, 8),
-              ],
+              spots: spots[getMonthNumber(month) - 1],
               isCurved: true,
               gradient: const LinearGradient(colors: [
                 AppColors.purple,
@@ -105,6 +101,7 @@ class ExpenseGraphDesign extends StatelessWidget {
                       case 10:
                         text = '10';
                         break;
+
                       default:
                         return Container();
                     }

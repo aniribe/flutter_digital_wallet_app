@@ -24,7 +24,7 @@ dependencies:
   injectable:
 
   fl_chart: ^0.51.0
-#  percent_indicator: ^4.2.2
+  percent_indicator: ^4.2.2
 
 dev_dependencies:
   flutter_test:

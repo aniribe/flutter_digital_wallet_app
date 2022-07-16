@@ -3,12 +3,12 @@ import '../../../widgets/visa_card/visa_card.dart';
 import 'expense_income_section.dart';
 
 class CreditCardSection extends StatelessWidget {
-  final String selectedValue;
+  final String selectedMonth;
   final void Function(String?)? onChanged;
 
   const CreditCardSection({
     Key? key,
-    required this.selectedValue,
+    required this.selectedMonth,
     this.onChanged,
   }) : super(key: key);
 
@@ -18,7 +18,7 @@ class CreditCardSection extends StatelessWidget {
       children: [
         const VisaCardDesign(),
         ExpenseIncomeSection(
-          selectedValue: selectedValue,
+          selectedMonth: selectedMonth,
           onChanged: onChanged,
         ),
       ],

@@ -1,14 +1,16 @@
+import 'package:digital_wallet_app/util/logic_helper.dart';
 import 'package:digital_wallet_app/views/home/components/sum_data_section.dart';
 import 'package:flutter/material.dart';
+import '../../../data/data.dart';
 import 'dropdown_section.dart';
 
 class ExpenseIncomeSection extends StatelessWidget {
-  final String selectedValue;
+  final String selectedMonth;
   final void Function(String?)? onChanged;
 
   const ExpenseIncomeSection({
     Key? key,
-    required this.selectedValue,
+    required this.selectedMonth,
     this.onChanged,
   }) : super(key: key);
 
@@ -22,8 +24,11 @@ class ExpenseIncomeSection extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SumDataSection(),
-            DropDownSection(selectedValue: selectedValue, onChanged: onChanged),
+            SumDataSection(
+              expense: expenseIncomes[getMonthNumber(selectedMonth)].expense,
+              incomes: expenseIncomes[getMonthNumber(selectedMonth)].income,
+            ),
+            DropDownSection(selectedValue: selectedMonth, onChanged: onChanged),
           ],
         ),
       ),

@@ -5,8 +5,13 @@ import '../../../util/ui_helper.dart';
 import '../../../widgets/sum_widget/sum_container.dart';
 
 class SumDataSection extends StatelessWidget {
+  final String expense;
+  final String incomes;
+
   const SumDataSection({
     Key? key,
+    required this.expense,
+    required this.incomes,
   }) : super(key: key);
 
   @override
@@ -18,7 +23,7 @@ class SumDataSection extends StatelessWidget {
           icon: StringConstants.arrowUpIcon,
           textColor: AppColors.white.withOpacity(0.9),
           dataType: StringConstants.expense,
-          sum: '4100.00',
+          sum: expense,
         ),
         verticalSpace(20),
         SumContainer(
@@ -26,7 +31,7 @@ class SumDataSection extends StatelessWidget {
           icon: StringConstants.arrowDownIcon,
           textColor: AppColors.pink.withOpacity(0.9),
           dataType: StringConstants.income,
-          sum: '2100.00',
+          sum: incomes,
         ),
       ],
     );
