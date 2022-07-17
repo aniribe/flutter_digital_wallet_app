@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
-class HomePageViewModel extends BaseViewModel {
-  String? selectedMonth = "August";
-
+class HomePageViewModel extends IndexTrackingViewModel {
   double leftForAnimation = 30;
-
-  void onDropDownValueChanged(String? newValue) {
-    selectedMonth = newValue;
-    notifyListeners();
-  }
+  int currentIndex = 0;
 
   void onButtonPressed(BuildContext context, double left) {
+    print('PRESSED');
     leftForAnimation = left;
     notifyListeners();
   }

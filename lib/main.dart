@@ -1,8 +1,11 @@
+import 'package:digital_wallet_app/config/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked_services/stacked_services.dart';
+import 'config/app.locator.dart';
 import 'config/app.router.dart';
 
 void main() {
+  setupLocator();
   runApp(const MyApp());
 }
 
