@@ -9,6 +9,7 @@
 import 'package:stacked_core/stacked_core.dart';
 import 'package:stacked_services/stacked_services.dart';
 
+import '../views/cards/cards_viewmodel.dart';
 import '../views/history/history_viewmodel.dart';
 
 final locator = StackedLocator.instance;
@@ -21,6 +22,7 @@ Future<void> setupLocator(
 
 // Register dependencies
   locator.registerSingleton(HistoryViewModel());
+  locator.registerSingleton(CardsViewModel());
   locator.registerLazySingleton(() => NavigationService());
   locator.registerLazySingleton(() => DialogService());
 }

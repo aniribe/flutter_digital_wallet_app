@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 
 import '../model/expence_income_model.dart';
 import '../model/percentage.dart';
+import '../widgets/visa_card/visa_card.dart';
 
 final List monthList = [
   "January",
@@ -145,4 +146,9 @@ final List<ExpenseIncomeModel> expenseIncomes = [
   ExpenseIncomeModel(expense: '4300.00', income: '3300.00'),
   ExpenseIncomeModel(expense: '5100.00', income: '1500.00'),
   ExpenseIncomeModel(expense: '4300.00', income: '8900.00'),
+];
+
+final cards = [
+  const VisaCardDesign(quarterTurns: 0),
+  const VisaCardDesign(quarterTurns: 0),
 ];

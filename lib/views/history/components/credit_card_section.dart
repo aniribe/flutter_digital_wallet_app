@@ -16,7 +16,7 @@ class CreditCardSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const VisaCardDesign(),
+        const VisaCardDesign(quarterTurns: 3),
         ExpenseIncomeSection(
           selectedMonth: selectedMonth,
           onChanged: onChanged,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../consts/app_colors.dart';
-import '../consts/string_constants.dart';
+import 'buttons/button_with_icon.dart';
 
 class TitleLine extends StatelessWidget {
   final String title;
@@ -27,23 +27,7 @@ class TitleLine extends StatelessWidget {
               color: AppColors.white,
             ),
           ),
-          Container(
-            height: 30,
-            width: 30,
-            child: TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  backgroundColor: AppColors.grey900,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  padding: const EdgeInsets.all(3),
-                ),
-                child: Icon(
-                  icon,
-                  color: AppColors.grey500,
-                )),
-          )
+          ButtonWithIcon(icon: icon)
         ],
       ),
     );

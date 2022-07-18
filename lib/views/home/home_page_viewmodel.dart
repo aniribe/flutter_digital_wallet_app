@@ -3,11 +3,12 @@ import 'package:stacked/stacked.dart';
 
 class HomePageViewModel extends IndexTrackingViewModel {
   double leftForAnimation = 30;
-  int currentIndex = 0;
 
-  void onButtonPressed(BuildContext context, double left) {
-    print('PRESSED');
+  void onButtonPressed(BuildContext context, double left, int index) {
+    print('PRESSED: $index');
+    setIndex(index);
     leftForAnimation = left;
+
     notifyListeners();
   }
 }

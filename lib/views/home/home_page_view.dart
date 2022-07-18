@@ -1,13 +1,9 @@
-import 'package:digital_wallet_app/consts/string_constants.dart';
-import 'package:digital_wallet_app/util/ui_helper.dart';
 import 'package:digital_wallet_app/views/history/history_view.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import '../../consts/app_colors.dart';
 import '../../widgets/buttons/bottom_nav_item.dart';
-import '../history/components/charts_section.dart';
-import '../history/components/credit_card_section.dart';
-import '../../widgets/title_line.dart';
+import '../cards/cards_view.dart';
 import 'home_page_viewmodel.dart';
 
 class HomePageView extends StatelessWidget {
@@ -63,22 +59,23 @@ class AppBottomNavBar extends StatelessWidget {
                   children: [
                     BottomNavItem(
                       icon: Icons.bar_chart,
-                      onButtonPressed: () => model.onButtonPressed(context, 28),
+                      onButtonPressed: () =>
+                          model.onButtonPressed(context, 28, 0),
                     ),
                     BottomNavItem(
                       icon: Icons.add_card,
                       onButtonPressed: () =>
-                          model.onButtonPressed(context, 115),
+                          model.onButtonPressed(context, 115, 1),
                     ),
                     BottomNavItem(
                       icon: Icons.notifications,
                       onButtonPressed: () =>
-                          model.onButtonPressed(context, 200),
+                          model.onButtonPressed(context, 200, 1),
                     ),
                     BottomNavItem(
                       icon: Icons.settings,
                       onButtonPressed: () =>
-                          model.onButtonPressed(context, 290),
+                          model.onButtonPressed(context, 290, 1),
                     ),
                   ],
                 ),
@@ -125,8 +122,8 @@ Widget getViewForIndex(int index) {
   switch (index) {
     case 0:
       return const HistoryView();
-    // case 1:
-    //   return TodoView();
+    case 1:
+      return CardsView();
     default:
       return const HistoryView();
   }

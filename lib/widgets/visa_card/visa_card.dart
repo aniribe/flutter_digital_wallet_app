@@ -5,29 +5,34 @@ import 'package:flutter/material.dart';
 import '../../consts/app_colors.dart';
 
 class VisaCardDesign extends StatelessWidget {
-  const VisaCardDesign({Key? key}) : super(key: key);
+  final int quarterTurns;
+
+  const VisaCardDesign({
+    Key? key,
+    required this.quarterTurns,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 260,
-      width: 170,
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: const LinearGradient(
-            colors: [
-              AppColors.purple,
-              AppColors.pink,
-              // AppColors.yellow,
-            ],
-            begin: Alignment.bottomCenter,
-            end: Alignment.topCenter,
-          )),
-      child: RotatedBox(
-        quarterTurns: 3,
+    return RotatedBox(
+      quarterTurns: quarterTurns,
+      child: Container(
+        height: 170,
+        width: 260,
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: const LinearGradient(
+              colors: [
+                AppColors.purple,
+                AppColors.pink,
+                AppColors.yellow,
+                // AppColors.yellow,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            )),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(

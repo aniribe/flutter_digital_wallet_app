@@ -10,6 +10,8 @@ class StringConstants {
   static const String week = 'Week';
   static const String month = 'Month';
   static const String analytics = 'Analytics';
+  static const String myCards = 'My cards';
+  static const String sendMoney = 'Send money';
 
   //Images
   static const String arrowUpIcon = 'assets/images/arrow_up.png';
