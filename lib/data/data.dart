@@ -149,6 +149,12 @@ final List<ExpenseIncomeModel> expenseIncomes = [
 ];
 
 final cards = [
-  const VisaCardDesign(quarterTurns: 0),
-  const VisaCardDesign(quarterTurns: 0),
+  const VisaCardDesign(
+    quarterTurns: 0,
+    width: 300,
+  ),
+  const VisaCardDesign(
+    quarterTurns: 0,
+    width: 300,
+  ),
 ];

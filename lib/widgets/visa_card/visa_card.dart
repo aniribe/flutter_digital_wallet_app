@@ -6,10 +6,12 @@ import '../../consts/app_colors.dart';
 
 class VisaCardDesign extends StatelessWidget {
   final int quarterTurns;
+  final double width;
 
   const VisaCardDesign({
     Key? key,
     required this.quarterTurns,
+    this.width = 260,
   }) : super(key: key);
 
   @override
@@ -18,7 +20,7 @@ class VisaCardDesign extends StatelessWidget {
       quarterTurns: quarterTurns,
       child: Container(
         height: 170,
-        width: 260,
+        width: width,
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
