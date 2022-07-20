@@ -8,6 +8,7 @@ import '../../widgets/title_line.dart';
 import 'cards_viewmodel.dart';
 import 'components/credit_cards_section.dart';
 import 'components/send_money_section.dart';
+import 'components/transaction_section.dart';
 
 class CardsView extends StatelessWidget {
   final CarouselController _controller = CarouselController();
@@ -38,6 +39,8 @@ class CardsView extends StatelessWidget {
                   ),
                   verticalSpace(20),
                   const SendMoneySection(),
+                  verticalSpace(20),
+                  const TransactionSection()
                 ],
               )),
             ));

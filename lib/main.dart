@@ -1,4 +1,5 @@
 import 'package:digital_wallet_app/config/locator.dart';
+import 'package:digital_wallet_app/consts/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'config/app.locator.dart';
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'Poppins'),
+      color: AppColors.black,
+      theme: ThemeData(fontFamily: 'Poppins', brightness: Brightness.dark),
       navigatorKey: StackedService.navigatorKey,
       onGenerateRoute: StackedRouter().onGenerateRoute,
     );

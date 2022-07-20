@@ -12,6 +12,11 @@ class StringConstants {
   static const String analytics = 'Analytics';
   static const String myCards = 'My cards';
   static const String sendMoney = 'Send money';
+  static const String transactions = 'Transactions';
+  static const String dribbble = 'Dribbble';
+  static const String spotify = 'Spotify';
+  static const String apple = 'Apple';
+  static const String google = 'Google';
 
   //Images
   static const String arrowUpIcon = 'assets/images/arrow_up.png';

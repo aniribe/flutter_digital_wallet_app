@@ -1,7 +1,6 @@
 import 'package:digital_wallet_app/consts/app_colors.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
-
 import '../../../data/data.dart';
 import '../../../util/logic_helper.dart';
 
