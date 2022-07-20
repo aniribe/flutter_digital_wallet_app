@@ -1,4 +1,3 @@
-import 'package:digital_wallet_app/config/locator.dart';
 import 'package:digital_wallet_app/consts/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';

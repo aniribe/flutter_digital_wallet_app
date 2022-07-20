@@ -1,16 +1,39 @@
 # digital_wallet_app
 
-A new Flutter project.
+Two pages from app - History View and My Cards View.
 
-## Getting Started
+<img src="https://github.com/aniribe/flutter_digital_wallet_app/blob/main/assets/images/wall.webp" height=500px>
 
-This project is a starting point for a Flutter application.
+## Technologies used:
 
-A few resources to get you started if this is your first Flutter project:
+• Flutter
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+• Dart
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+• MVVM pattern
+
+## Packages used:
+
+• flutter_svg
+
+• fl_chart
+
+• percent_indicator
+
+• carousel_slider
+
+• font_awesome_flutter
+
+• animations
+
+ For MVVM architecture
+
+ • stacked:
+
+ • stacked_services:
+
+ • build_runner:
+
+ • stacked_generator:
+
+ • injectable_generator:
