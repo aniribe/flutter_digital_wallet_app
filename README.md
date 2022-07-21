@@ -2,7 +2,7 @@
 
 Two pages from app - History View and My Cards View.
 
-<img src="https://github.com/aniribe/flutter_digital_wallet_app/blob/main/assets/images/wall.webp" height=500px>
+<img src="https://github.com/aniribe/flutter_digital_wallet_app/blob/main/assets/images/app_screenshot.png" height=500px>
 
 ## Technologies used:
 
